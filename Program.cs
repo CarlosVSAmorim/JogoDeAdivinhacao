@@ -84,7 +84,7 @@
             Console.ReadLine();
         }
     }
-    
+    //Função para exibir as tentativas restantes, a pontuação e os números que ja foram jogados
     static void ExibirStatus(int tentativa, int totalDeTentativas, HashSet<int> numerosTentados, int pontuacao)
     {
         Console.WriteLine("----------------------------------------");
@@ -93,7 +93,7 @@
         Console.WriteLine($"Pontuação: {pontuacao}");
         Console.WriteLine("----------------------------------------");
     }
-
+    //Função para obter o número aleatório do jogador
     static int ObterNumeroUsuario(HashSet<int> numerosTentados)
     {
         while (true)
@@ -112,7 +112,7 @@
             }
         }
     }
-
+    //Função para finalizar o jogo ou continuar jogando
     static bool DesejaContinuar()
     {
         Console.Write("Deseja jogar novamente? (S/N): ");
